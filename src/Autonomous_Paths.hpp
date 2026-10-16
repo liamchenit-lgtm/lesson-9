@@ -57,15 +57,15 @@ Practice:
 ASSET(sampleRoute_txt);
 
 void redAuton1() {
-    chassis.setPose(15.7-61.8, , 0);
+    chassis.setPose(-61.8, 15.7, 0);
     // lookahead distance: 15 inches
     // timeout: 2000 ms
     chassis.follow(sampleRoute_txt, 15, 15000);
     chassis.waitUntil(12);
     claw.move(100);
 
-    // chassis.waitUntilDone();
-    // claw.brake();
+    chassis.waitUntilDone();
+    claw.brake();
 }
 
 
@@ -105,9 +105,8 @@ Practice:
         - use pure pursuit to navigate to the ball then motion chaining to score
 */
 
-// Drive a 19 x 16 inch square using moveToPoint only.
+// Example: Moving around a obstacle to the robot's right side
 void redAuton2() {
-    // The robot starts at (0, 0), facing along the first side (+X).
     chassis.setPose(0, 0, 90);
 
     // move to intermediate position

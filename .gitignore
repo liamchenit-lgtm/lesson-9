@@ -1,12 +1,7 @@
 # Compiled Object files
+.DS_Store
 *.o
 *.obj
-*.exe
-*.dSYM/
-build/
-
-# OS metadata
-.DS_Store
 
 # Executables
 *.bin

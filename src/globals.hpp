@@ -63,7 +63,7 @@ inline pros::MotorGroup leftDT({1}, pros::v5::MotorGears::green);
 inline pros::MotorGroup rightDT({-5}, pros::v5::MotorGears::green); 
 inline pros::Motor arm({4}, pros::v5::MotorGears::green); 
 inline pros::Motor claw({7}, pros::v5::MotorGears::green); 
-inline pros::Imu IMU(10);
+inline pros::Imu IMU(9);
 inline pros::Distance distance (2);
 
 
@@ -181,7 +181,7 @@ lemlib::ControllerSettings lateral_controller(10,   // proportional gain (kP)   
 
 
 
-// Finally, create the chassis
+// Finally, create the hassis
 lemlib::Chassis chassis(drivetrain, // drivetrain settings
                         lateral_controller, // lateral PID settings
                         angular_controller, // angular PID settings
